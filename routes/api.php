@@ -8,4 +8,4 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::get('/lugares', [LugaresController::class, 'index']);
+// Route::apiResource('lugares', LugaresController::class);
